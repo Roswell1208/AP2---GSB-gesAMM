@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSB - gesAMM", "GSB - gesAMM\GSB - gesAMM.csproj", "{2AC2C1B3-F0A5-4608-B875-BC6BD1C6CD37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AC2C1B3-F0A5-4608-B875-BC6BD1C6CD37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AC2C1B3-F0A5-4608-B875-BC6BD1C6CD37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AC2C1B3-F0A5-4608-B875-BC6BD1C6CD37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AC2C1B3-F0A5-4608-B875-BC6BD1C6CD37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {916E830E-FAF9-4722-818E-C60A8F04D4E7}
+	EndGlobalSection
+EndGlobal
