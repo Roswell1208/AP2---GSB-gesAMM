@@ -30,6 +30,10 @@ namespace GSB___gesAMM
         private void frmAuthentication_Load(object sender, EventArgs e)
         {
             btnValider.Enabled = controlValidite();
+
+            globale.cnx = new System.Data.SqlClient.SqlConnection();
+            globale.cnx.ConnectionString = "Data Source=BTS2021-25\\SQLEXPRESS01;Initial Catalog=GSB_gesAMM;Integrated Security=True;MultipleActiveResultSets=True";
+            globale.cnx.Open();
         }
 
         private void tbIdentifiant_TextChanged(object sender, EventArgs e)
@@ -44,7 +48,7 @@ namespace GSB___gesAMM
 
         private void btnValider_Click(object sender, EventArgs e)
         {
-            if (tbIdentifiant.Text.ToUpper() == "USER1234" && tbMotDePasse.Text.ToUpper() == "USER1234")
+            if (bd.userListCheck(tbIdentifiant.Text, tbMotDePasse.Text) == true)
             {
                 frmAccueil maForm = new frmAccueil();
                 maForm.Show();
