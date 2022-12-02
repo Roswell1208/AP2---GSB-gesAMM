@@ -1,0 +1,23 @@
+C:\Users\muriennv\Documents\BTS\Deuxième Année\AP_SLAM\AP2---GSB-gesAMM\GSB - gesAMM\GSB - gesAMM\obj\Debug\net6.0-windows\GSB - gesAMM.csproj.AssemblyReference.cache
+C:\Users\muriennv\Documents\BTS\Deuxième Année\AP_SLAM\AP2---GSB-gesAMM\GSB - gesAMM\GSB - gesAMM\obj\Debug\net6.0-windows\GSB - gesAMM.csproj.GenerateResource.cache
+C:\Users\muriennv\Documents\BTS\Deuxième Année\AP_SLAM\AP2---GSB-gesAMM\GSB - gesAMM\GSB - gesAMM\obj\Debug\net6.0-windows\GSB - gesAMM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muriennv\Documents\BTS\Deuxième Année\AP_SLAM\AP2---GSB-gesAMM\GSB - gesAMM\GSB - gesAMM\obj\Debug\net6.0-windows\GSB - gesAMM.AssemblyInfoInputs.cache
+C:\Users\muriennv\Documents\BTS\Deuxième Année\AP_SLAM\AP2---GSB-gesAMM\GSB - gesAMM\GSB - gesAMM\obj\Debug\net6.0-windows\GSB - gesAMM.AssemblyInfo.cs
+C:\Users\muriennv\Documents\BTS\Deuxième Année\AP_SLAM\AP2---GSB-gesAMM\GSB - gesAMM\GSB - gesAMM\obj\Debug\net6.0-windows\GSB - gesAMM.csproj.CoreCompileInputs.cache
+C:\Users\muriennv\Documents\BTS\Deuxième Année\AP_SLAM\AP2---GSB-gesAMM\GSB - gesAMM\GSB - gesAMM\bin\Debug\net6.0-windows\GSB - gesAMM.exe
+C:\Users\muriennv\Documents\BTS\Deuxième Année\AP_SLAM\AP2---GSB-gesAMM\GSB - gesAMM\GSB - gesAMM\bin\Debug\net6.0-windows\GSB - gesAMM.deps.json
+C:\Users\muriennv\Documents\BTS\Deuxième Année\AP_SLAM\AP2---GSB-gesAMM\GSB - gesAMM\GSB - gesAMM\bin\Debug\net6.0-windows\GSB - gesAMM.runtimeconfig.json
+C:\Users\muriennv\Documents\BTS\Deuxième Année\AP_SLAM\AP2---GSB-gesAMM\GSB - gesAMM\GSB - gesAMM\bin\Debug\net6.0-windows\GSB - gesAMM.dll
+C:\Users\muriennv\Documents\BTS\Deuxième Année\AP_SLAM\AP2---GSB-gesAMM\GSB - gesAMM\GSB - gesAMM\bin\Debug\net6.0-windows\GSB - gesAMM.pdb
+C:\Users\muriennv\Documents\BTS\Deuxième Année\AP_SLAM\AP2---GSB-gesAMM\GSB - gesAMM\GSB - gesAMM\obj\Debug\net6.0-windows\GSB - gesAMM.dll
+C:\Users\muriennv\Documents\BTS\Deuxième Année\AP_SLAM\AP2---GSB-gesAMM\GSB - gesAMM\GSB - gesAMM\obj\Debug\net6.0-windows\refint\GSB - gesAMM.dll
+C:\Users\muriennv\Documents\BTS\Deuxième Année\AP_SLAM\AP2---GSB-gesAMM\GSB - gesAMM\GSB - gesAMM\obj\Debug\net6.0-windows\GSB - gesAMM.pdb
+C:\Users\muriennv\Documents\BTS\Deuxième Année\AP_SLAM\AP2---GSB-gesAMM\GSB - gesAMM\GSB - gesAMM\obj\Debug\net6.0-windows\GSB - gesAMM.genruntimeconfig.cache
+C:\Users\muriennv\Documents\BTS\Deuxième Année\AP_SLAM\AP2---GSB-gesAMM\GSB - gesAMM\GSB - gesAMM\obj\Debug\net6.0-windows\ref\GSB - gesAMM.dll
+C:\Users\muriennv\Documents\BTS\Deuxième Année\AP_SLAM\AP2---GSB-gesAMM\GSB - gesAMM\GSB - gesAMM\obj\Debug\net6.0-windows\GSB___gesAMM.frmAccueil.resources
+C:\Users\muriennv\Documents\BTS\Deuxième Année\AP_SLAM\AP2---GSB-gesAMM\GSB - gesAMM\GSB - gesAMM\obj\Debug\net6.0-windows\GSB___gesAMM.frmNewMedicament.resources
+C:\Users\muriennv\Documents\BTS\Deuxième Année\AP_SLAM\AP2---GSB-gesAMM\GSB - gesAMM\GSB - gesAMM\obj\Debug\net6.0-windows\GSB___gesAMM.frmSaisieEtape.resources
+C:\Users\muriennv\Documents\BTS\Deuxième Année\AP_SLAM\AP2---GSB-gesAMM\GSB - gesAMM\GSB - gesAMM\obj\Debug\net6.0-windows\GSB___gesAMM.frmAfficherFamille.resources
+C:\Users\muriennv\Documents\BTS\Deuxième Année\AP_SLAM\AP2---GSB-gesAMM\GSB - gesAMM\GSB - gesAMM\obj\Debug\net6.0-windows\GSB___gesAMM.frmEtapesMedicaments.resources
+C:\Users\muriennv\Documents\BTS\Deuxième Année\AP_SLAM\AP2---GSB-gesAMM\GSB - gesAMM\GSB - gesAMM\obj\Debug\net6.0-windows\GSB___gesAMM.frmMedicamentsEnCours.resources
+C:\Users\muriennv\Documents\BTS\Deuxième Année\AP_SLAM\AP2---GSB-gesAMM\GSB - gesAMM\GSB - gesAMM\obj\Debug\net6.0-windows\GSB___gesAMM.frmUpdateEtapeNormee.resources
