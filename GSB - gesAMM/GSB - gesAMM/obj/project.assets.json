@@ -2783,11 +2783,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\muriennv\\Documents\\BTS\\Deuxième Année\\AP_SLAM\\AP2---GSB-gesAMM\\GSB - gesAMM\\GSB - gesAMM\\GSB - gesAMM.csproj",
+      "projectUniqueName": "C:\\Users\\muriennv\\Documents\\BTS\\Deuxième Année\\AP_SLAM\\AP2\\AP2---GSB-gesAMM\\GSB - gesAMM\\GSB - gesAMM\\GSB - gesAMM.csproj",
       "projectName": "GSB - gesAMM",
-      "projectPath": "C:\\Users\\muriennv\\Documents\\BTS\\Deuxième Année\\AP_SLAM\\AP2---GSB-gesAMM\\GSB - gesAMM\\GSB - gesAMM\\GSB - gesAMM.csproj",
+      "projectPath": "C:\\Users\\muriennv\\Documents\\BTS\\Deuxième Année\\AP_SLAM\\AP2\\AP2---GSB-gesAMM\\GSB - gesAMM\\GSB - gesAMM\\GSB - gesAMM.csproj",
       "packagesPath": "C:\\Users\\muriennv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\muriennv\\Documents\\BTS\\Deuxième Année\\AP_SLAM\\AP2---GSB-gesAMM\\GSB - gesAMM\\GSB - gesAMM\\obj\\",
+      "outputPath": "C:\\Users\\muriennv\\Documents\\BTS\\Deuxième Année\\AP_SLAM\\AP2\\AP2---GSB-gesAMM\\GSB - gesAMM\\GSB - gesAMM\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\muriennv\\AppData\\Roaming\\NuGet\\NuGet.Config",
