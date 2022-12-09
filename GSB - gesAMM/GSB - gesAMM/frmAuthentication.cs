@@ -55,7 +55,7 @@ namespace GSB___gesAMM
             }
             else
             {
-                MessageBox.Show("Identifiant et/ou mot de passe incorrects", "MEDIA35", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Identifiant et/ou mot de passe incorrects", tbIdentifiant.Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
