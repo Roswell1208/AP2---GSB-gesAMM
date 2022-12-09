@@ -16,5 +16,17 @@ namespace GSB___gesAMM
         {
             InitializeComponent();
         }
+
+        private void frmSaisieEtape_Load(object sender, EventArgs e)
+        {
+            globale.cnx = new System.Data.SqlClient.SqlConnection();
+            globale.cnx.ConnectionString = globale.BddConnection;
+            globale.cnx.Open();
+
+            foreach(medicaments unMed in bd.medList())
+            {
+                cbListMed.Items.Add(unMed.getDepotLegal() + " - " + unMed.getNomCommercial());
+            }
+        }
     }
 }

@@ -26,7 +26,7 @@ namespace GSB___gesAMM
         private void saisieDécisionÉtapeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmSaisieEtape maForm = new frmSaisieEtape();
-            maForm.MdiParent = this;
+            //maForm.MdiParent = this;
             maForm.Show();
         }
 
@@ -69,7 +69,7 @@ namespace GSB___gesAMM
         {
             //Connexion à la base de données
             globale.cnx = new System.Data.SqlClient.SqlConnection();
-            globale.cnx.ConnectionString = "Data Source=BTS2021-25\\SQLEXPRESS01;Initial Catalog=GSB_gesAMM;Integrated Security=True;MultipleActiveResultSets=True";
+            globale.cnx.ConnectionString = globale.BddConnection;
             globale.cnx.Open();
 
             //globale.lesClients = new List<client>();
