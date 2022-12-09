@@ -69,7 +69,7 @@ namespace GSB___gesAMM
         {
             //Connexion à la base de données
             globale.cnx = new System.Data.SqlClient.SqlConnection();
-            globale.cnx.ConnectionString = "Data Source=BTS2021-20\\SQLEXPRESS;Initial Catalog=proto_classe;Integrated Security=True;MultipleActiveResultSets=True";
+            globale.cnx.ConnectionString = "Data Source=BTS2021-25\\SQLEXPRESS01;Initial Catalog=GSB_gesAMM;Integrated Security=True;MultipleActiveResultSets=True";
             globale.cnx.Open();
 
             //globale.lesClients = new List<client>();
