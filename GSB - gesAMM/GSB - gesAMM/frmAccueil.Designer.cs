@@ -56,14 +56,14 @@
             this.workflowToolStripMenuItem});
             this.MenuGSB.Location = new System.Drawing.Point(0, 0);
             this.MenuGSB.Name = "MenuGSB";
-            this.MenuGSB.Size = new System.Drawing.Size(800, 31);
+            this.MenuGSB.Size = new System.Drawing.Size(800, 28);
             this.MenuGSB.TabIndex = 0;
             this.MenuGSB.Text = "MenuGSB";
             // 
             // accueilToolStripMenuItem
             // 
             this.accueilToolStripMenuItem.Name = "accueilToolStripMenuItem";
-            this.accueilToolStripMenuItem.Size = new System.Drawing.Size(71, 27);
+            this.accueilToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
             this.accueilToolStripMenuItem.Text = "Accueil";
             this.accueilToolStripMenuItem.Click += new System.EventHandler(this.accueilToolStripMenuItem_Click);
             // 
@@ -73,29 +73,29 @@
             this.saisieDécisionÉtapeToolStripMenuItem,
             this.nouveauMédicamentToolStripMenuItem,
             this.afficherParFamilleToolStripMenuItem});
-            this.médicamentToolStripMenuItem.Font = new System.Drawing.Font("HoloLens MDL2 Assets", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.médicamentToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.médicamentToolStripMenuItem.Name = "médicamentToolStripMenuItem";
-            this.médicamentToolStripMenuItem.Size = new System.Drawing.Size(115, 27);
+            this.médicamentToolStripMenuItem.Size = new System.Drawing.Size(106, 24);
             this.médicamentToolStripMenuItem.Text = "Médicament";
             // 
             // saisieDécisionÉtapeToolStripMenuItem
             // 
             this.saisieDécisionÉtapeToolStripMenuItem.Name = "saisieDécisionÉtapeToolStripMenuItem";
-            this.saisieDécisionÉtapeToolStripMenuItem.Size = new System.Drawing.Size(256, 28);
+            this.saisieDécisionÉtapeToolStripMenuItem.Size = new System.Drawing.Size(238, 26);
             this.saisieDécisionÉtapeToolStripMenuItem.Text = "Saisie décision étape";
             this.saisieDécisionÉtapeToolStripMenuItem.Click += new System.EventHandler(this.saisieDécisionÉtapeToolStripMenuItem_Click);
             // 
             // nouveauMédicamentToolStripMenuItem
             // 
             this.nouveauMédicamentToolStripMenuItem.Name = "nouveauMédicamentToolStripMenuItem";
-            this.nouveauMédicamentToolStripMenuItem.Size = new System.Drawing.Size(256, 28);
+            this.nouveauMédicamentToolStripMenuItem.Size = new System.Drawing.Size(238, 26);
             this.nouveauMédicamentToolStripMenuItem.Text = "Nouveau médicament";
             this.nouveauMédicamentToolStripMenuItem.Click += new System.EventHandler(this.nouveauMédicamentToolStripMenuItem_Click);
             // 
             // afficherParFamilleToolStripMenuItem
             // 
             this.afficherParFamilleToolStripMenuItem.Name = "afficherParFamilleToolStripMenuItem";
-            this.afficherParFamilleToolStripMenuItem.Size = new System.Drawing.Size(256, 28);
+            this.afficherParFamilleToolStripMenuItem.Size = new System.Drawing.Size(238, 26);
             this.afficherParFamilleToolStripMenuItem.Text = "Afficher par famille";
             this.afficherParFamilleToolStripMenuItem.Click += new System.EventHandler(this.afficherParFamilleToolStripMenuItem_Click);
             // 
@@ -104,7 +104,7 @@
             this.etapeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.miseÀJourÉtapesNorméesToolStripMenuItem});
             this.etapeToolStripMenuItem.Name = "etapeToolStripMenuItem";
-            this.etapeToolStripMenuItem.Size = new System.Drawing.Size(67, 27);
+            this.etapeToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
             this.etapeToolStripMenuItem.Text = "Etapes";
             // 
             // miseÀJourÉtapesNorméesToolStripMenuItem
@@ -120,7 +120,7 @@
             this.etatToolStripMenuItem,
             this.médicamentsEnCoursDeValidationToolStripMenuItem});
             this.workflowToolStripMenuItem.Name = "workflowToolStripMenuItem";
-            this.workflowToolStripMenuItem.Size = new System.Drawing.Size(86, 27);
+            this.workflowToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
             this.workflowToolStripMenuItem.Text = "Workflow";
             // 
             // etatToolStripMenuItem

@@ -88,7 +88,6 @@ C:\Users\poqueth\Desktop\AP2 - GSB gesAMM\GSB - gesAMM\GSB - gesAMM\bin\Debug\ne
 C:\Users\poqueth\Desktop\AP2 - GSB gesAMM\GSB - gesAMM\GSB - gesAMM\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
 C:\Users\poqueth\Desktop\AP2 - GSB gesAMM\GSB - gesAMM\GSB - gesAMM\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\poqueth\Desktop\AP2 - GSB gesAMM\GSB - gesAMM\GSB - gesAMM\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\poqueth\Desktop\AP2 - GSB gesAMM\GSB - gesAMM\GSB - gesAMM\obj\Debug\net6.0-windows\GSB - gesAMM.csproj.AssemblyReference.cache
 C:\Users\poqueth\Desktop\AP2 - GSB gesAMM\GSB - gesAMM\GSB - gesAMM\obj\Debug\net6.0-windows\GSB___gesAMM.frmAccueil.resources
 C:\Users\poqueth\Desktop\AP2 - GSB gesAMM\GSB - gesAMM\GSB - gesAMM\obj\Debug\net6.0-windows\GSB___gesAMM.frmAfficherFamille.resources
 C:\Users\poqueth\Desktop\AP2 - GSB gesAMM\GSB - gesAMM\GSB - gesAMM\obj\Debug\net6.0-windows\GSB___gesAMM.frmAuthentication.resources
