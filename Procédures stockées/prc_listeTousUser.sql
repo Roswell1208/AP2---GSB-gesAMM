@@ -18,7 +18,7 @@ GO
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
-ALTER PROCEDURE prc_listeTousUser
+CREATE PROCEDURE prc_listeTousUser
 	-- Add the parameters for the stored procedure here
 AS
 BEGIN

@@ -40,14 +40,14 @@ namespace GSB___gesAMM
         private void afficherParFamilleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmAfficherFamille maForm = new frmAfficherFamille();
-            maForm.MdiParent = this;
+            //maForm.MdiParent = this;
             maForm.Show();
         }
 
         private void miseÀJourÉtapesNorméesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmUpdateEtapeNormee maForm = new frmUpdateEtapeNormee();
-            maForm.MdiParent = this;
+            //maForm.MdiParent = this;
             maForm.Show();
         }
 
@@ -69,7 +69,7 @@ namespace GSB___gesAMM
         {
             //Connexion à la base de données
             globale.cnx = new System.Data.SqlClient.SqlConnection();
-            globale.cnx.ConnectionString = "Data Source=BTS2021-25\\SQLEXPRESS01;Initial Catalog=GSB_gesAMM;Integrated Security=True;MultipleActiveResultSets=True";
+            globale.cnx.ConnectionString = "Data Source=BTS2021-20\\SQLEXPRESS;Initial Catalog=GSB_gesAMM;Integrated Security=True;MultipleActiveResultSets=True";
             globale.cnx.Open();
 
             //globale.lesClients = new List<client>();
