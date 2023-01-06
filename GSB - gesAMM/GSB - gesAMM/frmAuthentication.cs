@@ -50,6 +50,7 @@ namespace GSB___gesAMM
         {
             if (bd.userListCheck(tbIdentifiant.Text, tbMotDePasse.Text) == true)
             {
+                globale.user = tbIdentifiant.Text;
                 frmAccueil maForm = new frmAccueil();
                 maForm.Show();
             }

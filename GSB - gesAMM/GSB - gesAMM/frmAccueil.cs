@@ -23,14 +23,14 @@ namespace GSB___gesAMM
             maForm.Show();
         }
 
-        private void saisieDécisionÉtapeToolStripMenuItem_Click(object sender, EventArgs e)
+        private void saisieDï¿½cisionï¿½tapeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmSaisieEtape maForm = new frmSaisieEtape();
             //maForm.MdiParent = this;
             maForm.Show();
         }
 
-        private void nouveauMédicamentToolStripMenuItem_Click(object sender, EventArgs e)
+        private void nouveauMï¿½dicamentToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmNewMedicament maForm = new frmNewMedicament();
             maForm.MdiParent = this;
@@ -40,14 +40,14 @@ namespace GSB___gesAMM
         private void afficherParFamilleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmAfficherFamille maForm = new frmAfficherFamille();
-            maForm.MdiParent = this;
+            //maForm.MdiParent = this;
             maForm.Show();
         }
 
-        private void miseÀJourÉtapesNorméesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void miseï¿½Jourï¿½tapesNormï¿½esToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmUpdateEtapeNormee maForm = new frmUpdateEtapeNormee();
-            maForm.MdiParent = this;
+            //maForm.MdiParent = this;
             maForm.Show();
         }
 
@@ -58,7 +58,7 @@ namespace GSB___gesAMM
             maForm.Show();
         }
 
-        private void médicamentsEnCoursDeValidationToolStripMenuItem_Click(object sender, EventArgs e)
+        private void mï¿½dicamentsEnCoursDeValidationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmMedicamentsEnCours maForm = new frmMedicamentsEnCours();
             maForm.MdiParent = this;
@@ -67,7 +67,7 @@ namespace GSB___gesAMM
 
         private void frmAccueil_Load(object sender, EventArgs e)
         {
-            //Connexion à la base de données
+            //Connexion ï¿½ la base de donnï¿½es
             globale.cnx = new System.Data.SqlClient.SqlConnection();
             globale.cnx.ConnectionString = globale.BddConnection;
             globale.cnx.Open();
