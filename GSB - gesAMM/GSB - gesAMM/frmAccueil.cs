@@ -54,7 +54,7 @@ namespace GSB___gesAMM
         private void etatToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmEtapesMedicaments maForm = new frmEtapesMedicaments();
-            maForm.MdiParent = this;
+            //maForm.MdiParent = this;
             maForm.Show();
         }
 

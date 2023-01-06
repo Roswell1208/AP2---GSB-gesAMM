@@ -10,6 +10,9 @@ namespace GSB___gesAMM
 {
     internal class bd
     {
+
+        // Page de connexion
+
         public static bool userListCheck(string monIdentifiant, string monMotDePasse)
         {
             bool loginOk = false;
@@ -36,6 +39,10 @@ namespace GSB___gesAMM
             return loginOk;
         }
 
+
+
+
+        // A.Saisie de la décision d'une étape
 
         public static List<medicaments> medList()
         {
@@ -167,6 +174,67 @@ namespace GSB___gesAMM
 
             // exécuter la procedure stockée dans un curseur 
             maRequete.ExecuteNonQuery();
+        }
+
+
+
+
+        // D.Consultation du workflow des étapes d'un médicament
+
+
+        public static List<Tuple<int, string, DateTime, string, string, DateTime>> medWrkEtapes(string medDepotLegal)
+        {
+            int numEtape;
+            string libelleEtape;
+            DateTime dateDecision;
+            string libelleDecision;
+            string norme;
+            DateTime dateNorme;
+
+            List<Tuple<int, string, DateTime, string, string, DateTime>> listTuples = new List<Tuple<int, string, DateTime, string, string, DateTime>>();
+
+
+            //objet SQLCommand pour définir la procédure stockée à utiliser
+            SqlCommand maRequete = new SqlCommand("prc_wrkEtapes", globale.cnx);
+            maRequete.CommandType = System.Data.CommandType.StoredProcedure;
+
+            // set up the parameters
+            maRequete.Parameters.Add("@medDepotLegal", SqlDbType.VarChar, 5000);
+
+            // set parameter values
+            maRequete.Parameters["@medDepotLegal"].Value = medDepotLegal;
+
+
+            // exécuter la procedure stockée dans un curseur 
+            SqlDataReader SqlExec = maRequete.ExecuteReader();
+
+            //boucle de lecture du résultat de la requête
+            while (SqlExec.Read())
+            {
+                numEtape = Convert.ToInt32(SqlExec["ETP_NUM"]);
+                libelleEtape = SqlExec["ETP_LIBELLE"].ToString();
+                dateDecision = Convert.ToDateTime(SqlExec["WRK_DATE"]);
+                libelleDecision = SqlExec["DCS_LIBELLE"].ToString();
+                norme = SqlExec["NORME"].ToString();
+
+                if (SqlExec["NORME_DATE"].ToString() == "")
+                {
+                    dateNorme = Convert.ToDateTime("01/01/0001 00:00:00");
+                }
+
+                else
+                {
+                    dateNorme = Convert.ToDateTime(SqlExec["NORME_DATE"]);
+                }
+                    
+
+
+                Tuple<int, string, DateTime, string, string, DateTime> myTuple = new Tuple<int, string, DateTime, string, string, DateTime>(numEtape, libelleEtape, dateDecision, libelleDecision, norme, dateNorme);
+                
+                listTuples.Add(myTuple);
+            }
+
+            return listTuples;
         }
     }
 }
