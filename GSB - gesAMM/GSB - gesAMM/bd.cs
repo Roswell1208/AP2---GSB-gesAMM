@@ -116,5 +116,81 @@ namespace GSB___gesAMM
                 globale.lesEtapesNormees.Add(CodeNorme, uneEtapeNormee);
             }
         }
+
+        public static Boolean ajouterHistorique(string nom_user, string etp_av, string etp_ap, DateTime date_av, DateTime date_ap, DateTime date_maj, int etp_num)
+        {
+            SqlCommand maRequete = new SqlCommand("prc_ajout_historique", globale.cnx);
+            // Il s’agit d’une procédure stockée:
+            maRequete.CommandType = System.Data.CommandType.StoredProcedure;
+
+            // Ajouter les parameters à la procédure stockée
+            SqlParameter paramHIST_USER = new SqlParameter("@HIST_USR", System.Data.SqlDbType.VarChar, 32);
+            paramHIST_USER.Value = nom_user;
+            SqlParameter paramETP_AV = new SqlParameter("@norme_av", System.Data.SqlDbType.VarChar, 32);
+            paramETP_AV.Value = etp_av;
+            SqlParameter paramETP_AP = new SqlParameter("@norme_ap", System.Data.SqlDbType.VarChar, 32);
+            paramETP_AP.Value = etp_ap;
+            SqlParameter paramDATE_AV = new SqlParameter("@ancienneDate", System.Data.SqlDbType.Date);
+            paramDATE_AV.Value = date_av;
+            SqlParameter paramDATE_AP = new SqlParameter("@HIST_DATE_AP", System.Data.SqlDbType.Date);
+            paramDATE_AP.Value = date_ap;
+            SqlParameter paramDATE_MAJ = new SqlParameter("@HIST_DATE_MAJ", System.Data.SqlDbType.Date);
+            paramDATE_MAJ.Value = date_maj;
+
+            SqlParameter paramETP_NUM = new SqlParameter("@HIST_ETP_NUM", System.Data.SqlDbType.Int, 32);
+            paramETP_NUM.Value = etp_num;
+
+            maRequete.Parameters.Add(paramHIST_USER);
+            maRequete.Parameters.Add(paramETP_AV);
+            maRequete.Parameters.Add(paramETP_AP);
+            maRequete.Parameters.Add(paramDATE_AV);
+            maRequete.Parameters.Add(paramDATE_AP);
+            maRequete.Parameters.Add(paramDATE_MAJ);
+            maRequete.Parameters.Add(paramETP_NUM);
+
+            // exécuter la procedure stockée
+            try
+            {
+                maRequete.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception e)
+            {
+                // vérifie les potentiels msg d'erreur
+                MessageBox.Show(e.ToString());
+                return false;
+            }
+        }
+
+        public static Boolean updateEtape(string etape, DateTime date, string norme)
+        {
+            SqlCommand maRequete = new SqlCommand("prc_update_etpnorme", globale.cnx);
+            // Il s’agit d’une procédure stockée:
+            maRequete.CommandType = System.Data.CommandType.StoredProcedure;
+
+            // Ajouter les parameters à la procédure stockée
+            SqlParameter paramETAPE = new SqlParameter("@etp_num", System.Data.SqlDbType.Int);
+            paramETAPE.Value = etape;
+            SqlParameter paramDATE = new SqlParameter("@norme_date", System.Data.SqlDbType.Date);
+            paramDATE.Value = date;
+            SqlParameter paramNORME = new SqlParameter("@norme", System.Data.SqlDbType.VarChar, 32);
+            paramNORME.Value = norme;
+
+            maRequete.Parameters.Add(paramETAPE);
+            maRequete.Parameters.Add(paramDATE);
+            maRequete.Parameters.Add(paramNORME);
+
+            // exécuter la procedure stockée
+            try
+            {
+                maRequete.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
     }
 }

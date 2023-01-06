@@ -13,5 +13,6 @@ namespace GSB___gesAMM
         public static Dictionary<string, famille> lesFamilles = new Dictionary<string, famille>();
         public static Dictionary<string, medicaments> lesMedicaments = new Dictionary<string, medicaments>();
         public static Dictionary<string, etapeNormees> lesEtapesNormees = new Dictionary<string, etapeNormees>();
+        public static string user;
     }
 }
