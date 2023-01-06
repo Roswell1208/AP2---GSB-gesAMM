@@ -12,7 +12,7 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\poqueth\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\muriennv\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\poqueth\\.nuget\\packages"
     ],
     "configProperties": {
