@@ -19,18 +19,18 @@ namespace GSB___gesAMM
         private void accueilToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmAccueil maForm = new frmAccueil();
-            maForm.MdiParent = this;
+            //maForm.MdiParent = this;
             maForm.Show();
         }
 
-        private void saisieD�cision�tapeToolStripMenuItem_Click(object sender, EventArgs e)
+        private void saisieDécisionétapeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmSaisieEtape maForm = new frmSaisieEtape();
             //maForm.MdiParent = this;
             maForm.Show();
         }
 
-        private void nouveauM�dicamentToolStripMenuItem_Click(object sender, EventArgs e)
+        private void nouveauMédicamentToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmNewMedicament maForm = new frmNewMedicament();
             maForm.MdiParent = this;
@@ -44,7 +44,7 @@ namespace GSB___gesAMM
             maForm.Show();
         }
 
-        private void mise�Jour�tapesNorm�esToolStripMenuItem_Click(object sender, EventArgs e)
+        private void miseàJourétapesNorméesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmUpdateEtapeNormee maForm = new frmUpdateEtapeNormee();
             //maForm.MdiParent = this;
@@ -58,7 +58,7 @@ namespace GSB___gesAMM
             maForm.Show();
         }
 
-        private void m�dicamentsEnCoursDeValidationToolStripMenuItem_Click(object sender, EventArgs e)
+        private void médicamentsEnCoursDeValidationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmMedicamentsEnCours maForm = new frmMedicamentsEnCours();
             maForm.MdiParent = this;
@@ -73,6 +73,13 @@ namespace GSB___gesAMM
             globale.cnx.Open();
 
             //globale.lesClients = new List<client>();
+        }
+
+        private void saisieDécisionÉtapeToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            frmSaisieEtape maForm = new frmSaisieEtape();
+            //maForm.MdiParent = this;
+            maForm.Show();
         }
     }
 }

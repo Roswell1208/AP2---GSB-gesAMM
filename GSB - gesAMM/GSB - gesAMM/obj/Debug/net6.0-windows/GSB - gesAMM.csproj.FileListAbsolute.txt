@@ -84,3 +84,4 @@ C:\Users\poqueth\Desktop\AP2 - GSB gesAMM\GSB - gesAMM\GSB - gesAMM\obj\Debug\ne
 C:\Users\poqueth\Desktop\AP2 - GSB gesAMM\GSB - gesAMM\GSB - gesAMM\obj\Debug\net6.0-windows\ref\GSB - gesAMM.dll
 C:\Users\poqueth\Desktop\AP2 - GSB gesAMM\GSB - gesAMM\GSB - gesAMM\obj\Debug\net6.0-windows\GSB - gesAMM.pdb
 C:\Users\poqueth\Desktop\AP2 - GSB gesAMM\GSB - gesAMM\GSB - gesAMM\obj\Debug\net6.0-windows\GSB - gesAMM.genruntimeconfig.cache
+C:\Users\poqueth\Desktop\AP2 - GSB gesAMM\GSB - gesAMM\GSB - gesAMM\obj\Debug\net6.0-windows\GSB - gesAMM.csproj.AssemblyReference.cache
