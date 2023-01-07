@@ -112,6 +112,7 @@
             this.miseÀJourÉtapesNorméesToolStripMenuItem.Name = "miseÀJourÉtapesNorméesToolStripMenuItem";
             this.miseÀJourÉtapesNorméesToolStripMenuItem.Size = new System.Drawing.Size(274, 26);
             this.miseÀJourÉtapesNorméesToolStripMenuItem.Text = "Mise à jour étapes normées";
+            this.miseÀJourÉtapesNorméesToolStripMenuItem.Click += new System.EventHandler(this.miseÀJourÉtapesNorméesToolStripMenuItem_Click_1);
             // 
             // workflowToolStripMenuItem
             // 

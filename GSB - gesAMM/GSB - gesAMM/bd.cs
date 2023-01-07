@@ -62,7 +62,7 @@ namespace GSB___gesAMM
             {
                 string depotLegal = SqlExec["MED_DEPOTLEGAL"].ToString();
                 string nomCommercial = SqlExec["MED_NOMCOMMERCIAL"].ToString();
-                string fam_code = SqlExec["FAM_CODE"].ToString();
+                string fam_code = SqlExec["FAM_MED_CODE"].ToString();
                 string composition = SqlExec["MED_COMPOSITION"].ToString();
                 string effets = SqlExec["MED_EFFETS"].ToString();
                 string contreIndic = SqlExec["MED_CONTREINDIC"].ToString();
@@ -255,7 +255,7 @@ namespace GSB___gesAMM
             {
 
                 string nbMedicament = SqlExec["NbMedicaments"].ToString();
-                string CodeFamille = SqlExec["FAM_CODE"].ToString();
+                string CodeFamille = SqlExec["FAM_MED_CODE"].ToString();
                 string LibelleFamille = SqlExec["FAM_LIBELLE"].ToString();
 
                 

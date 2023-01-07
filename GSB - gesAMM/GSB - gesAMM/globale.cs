@@ -12,10 +12,10 @@ namespace GSB___gesAMM
         public static SqlConnection cnx;
 
         // BDD Hugo
-        public static string BddConnection = "Data Source=BTS2021-25\\SQLEXPRESS01;Initial Catalog=GSB_gesAMM;Integrated Security=True;MultipleActiveResultSets=True";
+        //public static string BddConnection = "Data Source=BTS2021-25\\SQLEXPRESS01;Initial Catalog=GSB_gesAMM;Integrated Security=True;MultipleActiveResultSets=True";
 
         // BDD Vincent
-        // public static string BddConnection = "Data Source=BTS2021-20\\SQLEXPRESS;Initial Catalog=GSB_gesAMM;Integrated Security=True;MultipleActiveResultSets=True";
+        public static string BddConnection = "Data Source=BTS2021-20\\SQLEXPRESS;Initial Catalog=GSB_gesAMM;Integrated Security=True;MultipleActiveResultSets=True";
 
         // BDD Esteban
         // public static string BddConnection = "Data Source=BTS2021-29\\SQLEXPRESS;Initial Catalog=GSB_gesAMM;Integrated Security=True;MultipleActiveResultSets=True";
