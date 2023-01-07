@@ -81,5 +81,12 @@ namespace GSB___gesAMM
             //maForm.MdiParent = this;
             maForm.Show();
         }
+
+        private void miseÀJourÉtapesNorméesToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            frmUpdateEtapeNormee maForm = new frmUpdateEtapeNormee();
+            //maForm.MdiParent = this;
+            maForm.Show();
+        }
     }
 }
