@@ -19,7 +19,14 @@ namespace GSB___gesAMM
 
         private void frmNewMedicament_Load(object sender, EventArgs e)
         {
+            globale.cnx = new System.Data.SqlClient.SqlConnection();
+            globale.cnx.ConnectionString = globale.BddConnection;
+            globale.cnx.Open();
 
+            foreach (famille uneFam in bd.familleList())
+            {
+                cbListFam.Items.Add(uneFam.getCode() + " - " + uneFam.getLibelle());
+            }
         }
     }
 }

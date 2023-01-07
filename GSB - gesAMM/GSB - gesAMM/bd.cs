@@ -255,11 +255,11 @@ namespace GSB___gesAMM
             {
 
                 string nbMedicament = SqlExec["NbMedicaments"].ToString();
-                string CodeFamille = SqlExec["FAM_MED_CODE"].ToString();
+                string CodeFamille = SqlExec["FAM_CODE"].ToString();
                 string LibelleFamille = SqlExec["FAM_LIBELLE"].ToString();
 
                 
-                famille uneFamille = new famille(CodeFamille, LibelleFamille, nbMedicament);
+                famille uneFamille = new famille(CodeFamille, LibelleFamille, nbMedicament, "");
 
                 globale.lesFamilles.Add(CodeFamille, uneFamille);
             }
@@ -392,6 +392,38 @@ namespace GSB___gesAMM
             {
                 return false;
             }
+        }
+
+
+
+
+        // C. Ajout d'un nouveau médicament
+
+        public static List<famille> familleList()
+        {
+            List<famille> listFam = new List<famille>();
+
+            //objet SQLCommand pour définir la requête à utiliser
+            SqlCommand maRequete = new SqlCommand("SELECT * FROM FAMILLE", globale.cnx);
+            maRequete.CommandType = System.Data.CommandType.Text;
+
+            // exécuter la procedure stockée dans un curseur 
+            SqlDataReader SqlExec = maRequete.ExecuteReader();
+
+            //boucle de lecture des user
+            while (SqlExec.Read())
+            {
+                string famCode = SqlExec["FAM_CODE"].ToString();
+                string famLibelle = SqlExec["FAM_LIBELLE"].ToString();
+                string famNbMed = SqlExec["FAM_NB_MEDI_AMM"].ToString();
+                string famNbMedMax = SqlExec["FAM_NB_MEDI_MAX"].ToString();
+
+                famille newFamille = new famille(famCode, famLibelle, famNbMed, famNbMedMax);
+
+                listFam.Add(newFamille);
+            }
+
+            return listFam;
         }
 
     }

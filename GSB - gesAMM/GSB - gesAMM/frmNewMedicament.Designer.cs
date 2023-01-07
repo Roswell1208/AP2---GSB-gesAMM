@@ -28,13 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.cbListFam = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
+            // 
+            // cbListFam
+            // 
+            this.cbListFam.FormattingEnabled = true;
+            this.cbListFam.Location = new System.Drawing.Point(194, 94);
+            this.cbListFam.Name = "cbListFam";
+            this.cbListFam.Size = new System.Drawing.Size(267, 28);
+            this.cbListFam.TabIndex = 0;
             // 
             // frmNewMedicament
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cbListFam);
             this.Name = "frmNewMedicament";
             this.Text = "frmNewMedicament";
             this.Load += new System.EventHandler(this.frmNewMedicament_Load);
@@ -43,5 +53,7 @@
         }
 
         #endregion
+
+        private ComboBox cbListFam;
     }
 }
