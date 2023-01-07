@@ -255,7 +255,7 @@ namespace GSB___gesAMM
             {
 
                 string nbMedicament = SqlExec["NbMedicaments"].ToString();
-                string CodeFamille = SqlExec["FAM_CODE"].ToString();
+                string CodeFamille = SqlExec["FAM_MED_CODE"].ToString();
                 string LibelleFamille = SqlExec["FAM_LIBELLE"].ToString();
 
                 

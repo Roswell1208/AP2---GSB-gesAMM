@@ -33,20 +33,13 @@ namespace GSB___gesAMM
         private void nouveauMédicamentToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmNewMedicament maForm = new frmNewMedicament();
-            maForm.MdiParent = this;
+            //maForm.MdiParent = this;
             maForm.Show();
         }
 
         private void afficherParFamilleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmAfficherFamille maForm = new frmAfficherFamille();
-            //maForm.MdiParent = this;
-            maForm.Show();
-        }
-
-        private void miseàJourétapesNorméesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmUpdateEtapeNormee maForm = new frmUpdateEtapeNormee();
             //maForm.MdiParent = this;
             maForm.Show();
         }
@@ -61,7 +54,7 @@ namespace GSB___gesAMM
         private void médicamentsEnCoursDeValidationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmMedicamentsEnCours maForm = new frmMedicamentsEnCours();
-            maForm.MdiParent = this;
+            //maForm.MdiParent = this;
             maForm.Show();
         }
 
