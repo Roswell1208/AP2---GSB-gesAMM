@@ -259,7 +259,7 @@ namespace GSB___gesAMM
                 string LibelleFamille = SqlExec["FAM_LIBELLE"].ToString();
 
                 
-                famille uneFamille = new famille(CodeFamille, LibelleFamille, nbMedicament, null);
+                famille uneFamille = new famille(CodeFamille, LibelleFamille, nbMedicament);
 
                 globale.lesFamilles.Add(CodeFamille, uneFamille);
             }
