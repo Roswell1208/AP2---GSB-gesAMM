@@ -34,7 +34,7 @@ namespace GSB___gesAMM
                     ListViewItem unMedicament = new ListViewItem();
                     unMedicament.Text = globale.lesFamilles[laFamille].getCode();
                     unMedicament.SubItems.Add(globale.lesFamilles[laFamille].getLibelle());
-                    unMedicament.SubItems.Add(globale.lesFamilles[laFamille].getNvMediAmm());
+                    unMedicament.SubItems.Add(globale.lesFamilles[laFamille].getNbMediAmm());
                     lv_med_fam.Items.Add(unMedicament);
                 }
 

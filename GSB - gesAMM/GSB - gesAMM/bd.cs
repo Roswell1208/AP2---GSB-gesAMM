@@ -255,7 +255,7 @@ namespace GSB___gesAMM
             {
 
                 string nbMedicament = SqlExec["NbMedicaments"].ToString();
-                string CodeFamille = SqlExec["FAM_MED_CODE"].ToString();
+                string CodeFamille = SqlExec["FAM_CODE"].ToString();
                 string LibelleFamille = SqlExec["FAM_LIBELLE"].ToString();
 
                 
@@ -392,6 +392,67 @@ namespace GSB___gesAMM
             {
                 return false;
             }
+        }
+
+
+
+
+        // C. Ajout d'un nouveau médicament
+
+        public static List<famille> familleList()
+        {
+            List<famille> listFam = new List<famille>();
+
+            //objet SQLCommand pour définir la requête à utiliser
+            SqlCommand maRequete = new SqlCommand("SELECT * FROM FAMILLE", globale.cnx);
+            maRequete.CommandType = System.Data.CommandType.Text;
+
+            // exécuter la procedure stockée dans un curseur 
+            SqlDataReader SqlExec = maRequete.ExecuteReader();
+
+            //boucle de lecture des user
+            while (SqlExec.Read())
+            {
+                string famCode = SqlExec["FAM_CODE"].ToString();
+                string famLibelle = SqlExec["FAM_LIBELLE"].ToString();
+                string famNbMed = SqlExec["FAM_NB_MEDI_AMM"].ToString();
+
+                famille newFamille = new famille(famCode, famLibelle, famNbMed);
+
+                listFam.Add(newFamille);
+            }
+
+            return listFam;
+        }
+
+
+        public static void ajoutNewMed(string medDepotLegal, string nomCommercial, string famCode,
+            string composition, string effets, string contreIndic, string prixEchant)
+        {
+            //objet SQLCommand pour définir la procédure stockée à utiliser
+            SqlCommand maRequete = new SqlCommand("prc_ajoutNewMed", globale.cnx);
+            maRequete.CommandType = System.Data.CommandType.StoredProcedure;
+
+            // set up the parameters
+            maRequete.Parameters.Add("@medDepotLegal", SqlDbType.VarChar, 5000);
+            maRequete.Parameters.Add("@nomCommercial", SqlDbType.VarChar, 5000);
+            maRequete.Parameters.Add("@famCode", SqlDbType.VarChar, 5000);
+            maRequete.Parameters.Add("@composition", SqlDbType.VarChar, 5000);
+            maRequete.Parameters.Add("@effets", SqlDbType.VarChar, 5000);
+            maRequete.Parameters.Add("@contreIndic", SqlDbType.VarChar, 5000);
+            maRequete.Parameters.Add("@prixEchant", SqlDbType.VarChar, 5000);
+
+            // set parameter values
+            maRequete.Parameters["@medDepotLegal"].Value = medDepotLegal;
+            maRequete.Parameters["@nomCommercial"].Value = nomCommercial;
+            maRequete.Parameters["@famCode"].Value = famCode;
+            maRequete.Parameters["@composition"].Value = composition;
+            maRequete.Parameters["@effets"].Value = effets;
+            maRequete.Parameters["@contreIndic"].Value = contreIndic;
+            maRequete.Parameters["@prixEchant"].Value = prixEchant;
+
+            // exécuter la procedure stockée dans un curseur 
+            maRequete.ExecuteNonQuery();
         }
 
     }

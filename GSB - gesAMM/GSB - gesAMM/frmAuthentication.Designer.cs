@@ -126,6 +126,7 @@
             this.Font = new System.Drawing.Font("HoloLens MDL2 Assets", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmAuthentication";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Page d\'authentification";
             this.Load += new System.EventHandler(this.frmAuthentication_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
