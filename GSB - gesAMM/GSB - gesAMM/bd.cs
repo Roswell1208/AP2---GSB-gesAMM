@@ -255,11 +255,11 @@ namespace GSB___gesAMM
             {
 
                 string nbMedicament = SqlExec["NbMedicaments"].ToString();
-                string CodeFamille = SqlExec["FAM_MED_CODE"].ToString();
+                string CodeFamille = SqlExec["FAM_CODE"].ToString();
                 string LibelleFamille = SqlExec["FAM_LIBELLE"].ToString();
 
                 
-                famille uneFamille = new famille(CodeFamille, LibelleFamille, nbMedicament);
+                famille uneFamille = new famille(CodeFamille, LibelleFamille, nbMedicament, null);
 
                 globale.lesFamilles.Add(CodeFamille, uneFamille);
             }
@@ -394,5 +394,72 @@ namespace GSB___gesAMM
             }
         }
 
+        public static void lireLesMedEnCours()
+        {
+            globale.lesFamilles.Clear();
+            globale.lesMedicaments.Clear();
+            //objet SQLCommand pour définir la procédure stockée à utiliser
+            SqlCommand maRequete = new SqlCommand("prc_med_encours", globale.cnx);
+            maRequete.CommandType = System.Data.CommandType.StoredProcedure;
+
+            // exécuter la procedure stockée dans un curseur 
+            SqlDataReader SqlExec = maRequete.ExecuteReader();
+
+
+            //boucle de lecture des clients avec ajout dans la collection
+            while (SqlExec.Read())
+            {
+                //string FamCode = SqlExec["FAM_MED_CODE"].ToString();
+                string DepotLegal = SqlExec["MED_DEPOTLEGAL"].ToString();
+                string NomCommerc = SqlExec["MED_NOMCOMMERCIAL"].ToString();
+                //string FamLibelle = SqlExec["FAM_LIBELLE"].ToString();
+                string CodeFamille = SqlExec["FAM_CODE"].ToString();
+
+                //if(globale.lesFamilles.ContainsKey(CodeFamille))
+                //{
+                //}
+
+                //else
+                //{
+                    //famille unefamille = new famille(CodeFamille, FamLibelle, null, null);
+                    medicaments unMedicament = new medicaments(DepotLegal, NomCommerc, null, null, null, null, null);
+
+                    //globale.lesFamilles.Add(CodeFamille, unefamille);
+                    globale.lesMedicaments.Add(DepotLegal, unMedicament);
+                //}
+            }
+        }
+
+        public static List<workflow> lireWorkflowMed()
+        {
+            //globale.lesMedicaments.Clear();
+            List<workflow> wrk_med = new List<workflow>();
+            //objet SQLCommand pour définir la procédure stockée à utiliser
+            SqlCommand maRequete = new SqlCommand("prc_work_selection_med", globale.cnx);
+            maRequete.CommandType = System.Data.CommandType.StoredProcedure;
+
+            // exécuter la procedure stockée dans un curseur 
+            SqlDataReader SqlExec = maRequete.ExecuteReader();
+
+
+            //boucle de lecture des clients avec ajout dans la collection
+            while (SqlExec.Read())
+            {
+                string MedDepot = SqlExec["WRK_MED_DEPOT"].ToString();
+                string ETP_NUM = SqlExec["WRK_ETP_NUM"].ToString();
+                string DCS_ID = SqlExec["WRK_DCS_ID"].ToString();
+                string Date = SqlExec["WRK_DATE"].ToString();
+
+                //medicaments unMedicament = new medicaments(DepotLegal, NomCommerc, null, null, null, null, null);
+
+                //globale.lesMedicaments.Add(DepotLegal, unMedicament);
+
+                workflow newMed = new workflow(MedDepot, ETP_NUM, DCS_ID, Date);
+
+                wrk_med.Add(newMed);
+            }
+
+            return wrk_med;
+        }
     }
 }
