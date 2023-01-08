@@ -16,6 +16,7 @@ namespace GSB___gesAMM
         private string effets;
         private string contreIndic;
         private string prixEchantillon;
+        private List<workflow> lesEtapes = new List<workflow>();
 
 
         public medicaments(string ledepotLegal, string lenomCommercial, string lafamCode, string laCompostion,
@@ -28,6 +29,7 @@ namespace GSB___gesAMM
             this.effets = lesEffets;
             this.contreIndic = lesContreIndic;
             this.prixEchantillon = lePrixEchantillon;
+            this.lesEtapes = new List<workflow>();
         }
         
         public string getDepotLegal() { return this.depotLegal; }
@@ -39,6 +41,8 @@ namespace GSB___gesAMM
         public string getEffets() { return this.effets; }
         public string getContreIndic() { return this.contreIndic; }
         public string getPrixEchantillon() { return this.prixEchantillon; }
+
+        public List<workflow> getLesEtapes() { return this.lesEtapes; }
 
     }
 }
