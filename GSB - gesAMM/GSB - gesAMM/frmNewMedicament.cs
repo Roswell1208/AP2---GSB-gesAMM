@@ -27,6 +27,50 @@ namespace GSB___gesAMM
             {
                 cbListFam.Items.Add(uneFam.getCode() + " - " + uneFam.getLibelle());
             }
+
+            foreach (medicaments unMed in bd.medList())
+            {
+                globale.lesMedicaments.Add(unMed.getDepotLegal(), unMed);
+            }
+        }
+
+        private void btnAjouter_Click(object sender, EventArgs e)
+        {
+            if (tbDepotLegal.Text != "" && tbNomCommercial.Text != "" && cbListFam.SelectedIndex != -1 && tbComposition.Text != "" 
+                && tbEffets.Text != "" && tbContreIndic.Text != "" && tbPrixEchant.Text != "")
+            {
+                bool depotLegalCheck = false;
+
+                foreach (string unDepotLegal in globale.lesMedicaments.Keys)
+                {
+                    if(tbDepotLegal.Text != unDepotLegal)
+                    {
+                        depotLegalCheck = true;
+                    }
+
+                    else
+                    {
+                        depotLegalCheck = false;
+                        MessageBox.Show("Erreur, le dépot légal entré existe déjà");
+                        break;
+                    }
+                }
+
+                if (depotLegalCheck == true)
+                {
+                    string[] codesFamille = cbListFam.Text.Split('-');
+                    string famCode = codesFamille[0];
+
+                    bd.ajoutNewMed(tbDepotLegal.Text, tbNomCommercial.Text, famCode, tbComposition.Text, tbEffets.Text, tbContreIndic.Text, tbPrixEchant.Text);
+
+                    MessageBox.Show("Requête envoyée");
+                }
+            }
+
+            else
+            {
+                MessageBox.Show("Certaines données n'ont pas été renseignées");
+            }
         }
     }
 }

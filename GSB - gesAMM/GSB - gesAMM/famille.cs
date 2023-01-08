@@ -11,16 +11,14 @@ namespace GSB___gesAMM
         private string fam_code;
         private string fam_libelle;
         private string fam_nb_medi_amm;
-        private string fam_nb_medi_max;
 
 
 
-        public famille(string leCode, string leLibelle, string leNbMediAmm, string leNbMediMax)
+        public famille(string leCode, string leLibelle, string leNbMediAmm)
         {
             this.fam_code = leCode;
             this.fam_libelle = leLibelle;
             this.fam_nb_medi_amm = leNbMediAmm;
-            this.fam_nb_medi_max = leNbMediMax;
         }
 
 
@@ -28,6 +26,5 @@ namespace GSB___gesAMM
         public string getCode() { return this.fam_code; }
         public string getLibelle() { return this.fam_libelle; }
         public string getNbMediAmm() { return this.fam_nb_medi_amm; }
-        public string gtNbMediMax() { return this.fam_nb_medi_max; }
     }
 }

@@ -40,10 +40,7 @@
             this.workflowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.etatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.médicamentsEnCoursDeValidationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pb_gsb = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.MenuGSB.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_gsb)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuGSB
@@ -56,7 +53,7 @@
             this.workflowToolStripMenuItem});
             this.MenuGSB.Location = new System.Drawing.Point(0, 0);
             this.MenuGSB.Name = "MenuGSB";
-            this.MenuGSB.Size = new System.Drawing.Size(800, 28);
+            this.MenuGSB.Size = new System.Drawing.Size(1281, 28);
             this.MenuGSB.TabIndex = 0;
             this.MenuGSB.Text = "MenuGSB";
             // 
@@ -137,45 +134,25 @@
             this.médicamentsEnCoursDeValidationToolStripMenuItem.Text = "Médicaments en cours de validation";
             this.médicamentsEnCoursDeValidationToolStripMenuItem.Click += new System.EventHandler(this.médicamentsEnCoursDeValidationToolStripMenuItem_Click);
             // 
-            // pb_gsb
-            // 
-            this.pb_gsb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(209)))), ((int)(((byte)(209)))));
-            this.pb_gsb.Image = ((System.Drawing.Image)(resources.GetObject("pb_gsb.Image")));
-            this.pb_gsb.Location = new System.Drawing.Point(197, 69);
-            this.pb_gsb.Margin = new System.Windows.Forms.Padding(2);
-            this.pb_gsb.Name = "pb_gsb";
-            this.pb_gsb.Size = new System.Drawing.Size(385, 253);
-            this.pb_gsb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_gsb.TabIndex = 1;
-            this.pb_gsb.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("HoloLens MDL2 Assets", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(213, 338);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(356, 47);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Bienvenue chez GSB";
-            // 
             // frmAccueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pb_gsb);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(1281, 734);
             this.Controls.Add(this.MenuGSB);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.MenuGSB;
             this.Name = "frmAccueil";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GSB-gesAMM";
             this.Load += new System.EventHandler(this.frmAccueil_Load);
             this.MenuGSB.ResumeLayout(false);
             this.MenuGSB.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_gsb)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,7 +171,5 @@
         private ToolStripMenuItem miseÀJourÉtapesNorméesToolStripMenuItem;
         private ToolStripMenuItem etatToolStripMenuItem;
         private ToolStripMenuItem médicamentsEnCoursDeValidationToolStripMenuItem;
-        private PictureBox pb_gsb;
-        private Label label1;
     }
 }
