@@ -61,10 +61,10 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pb_gsb.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAVMAAADZCAYAAACdF9N+AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAJYhJREFUeF7tnYmXFNd97/XH5J3kxfHJe3lOYieO5E2yLITYhWAYVrEMIBYBYh1m
+        wQAADsEBuJFr7QAAJYhJREFUeF7tnYmXFNd97/XH5J3kxfHJe3lOYieO5E2yLITYhWAYVrEMIBYBYh1m
         AQaGmWEbdiE2AQIEEghpgIFhVmZjhh3jeCIrWIokW4kSx/Hx8/PJue9+a+mp7v7N0t1Vt6u6v59zPufI
         PkDfe7vq2/fWXeopRQghJGMYpoQQ4gMMU0II8QGGKSGE+ADDlBBCfIBhSgghPsAwJYQQH2CYEkKIDzBM
         CSHEBximhBDiAwxTQgjxAYYpIYT4AMOUEEJ8gGFKCCE+wDAlec1//f6P6sEnX8d8p+kXMUtP3FXLD/UM

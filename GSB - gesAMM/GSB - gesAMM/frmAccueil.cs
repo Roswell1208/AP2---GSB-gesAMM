@@ -19,18 +19,11 @@ namespace GSB___gesAMM
         private void accueilToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmAccueil maForm = new frmAccueil();
-            maForm.MdiParent = this;
+            //maForm.MdiParent = this;
             maForm.Show();
         }
 
-        private void saisieDÈcision…tapeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmSaisieEtape maForm = new frmSaisieEtape();
-            maForm.MdiParent = this;
-            maForm.Show();
-        }
-
-        private void nouveauMÈdicamentToolStripMenuItem_Click(object sender, EventArgs e)
+        private void nouveauM√©dicamentToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmNewMedicament maForm = new frmNewMedicament();
             maForm.MdiParent = this;
@@ -44,13 +37,6 @@ namespace GSB___gesAMM
             maForm.Show();
         }
 
-        private void mise¿Jour…tapesNormÈesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmUpdateEtapeNormee maForm = new frmUpdateEtapeNormee();
-            maForm.MdiParent = this;
-            maForm.Show();
-        }
-
         private void etatToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmEtapesMedicaments maForm = new frmEtapesMedicaments();
@@ -58,7 +44,7 @@ namespace GSB___gesAMM
             maForm.Show();
         }
 
-        private void mÈdicamentsEnCoursDeValidationToolStripMenuItem_Click(object sender, EventArgs e)
+        private void m√©dicamentsEnCoursDeValidationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmMedicamentsEnCours maForm = new frmMedicamentsEnCours();
             maForm.MdiParent = this;
@@ -67,12 +53,26 @@ namespace GSB___gesAMM
 
         private void frmAccueil_Load(object sender, EventArgs e)
         {
-            //Connexion ‡ la base de donnÈes
+            //Connexion ÔøΩ la base de donnÔøΩes
             globale.cnx = new System.Data.SqlClient.SqlConnection();
-            globale.cnx.ConnectionString = "Data Source=BTS2021-25\\SQLEXPRESS01;Initial Catalog=GSB_gesAMM;Integrated Security=True;MultipleActiveResultSets=True";
+            globale.cnx.ConnectionString = globale.BddConnection;
             globale.cnx.Open();
 
             //globale.lesClients = new List<client>();
+        }
+
+        private void saisieD√©cision√âtapeToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            frmSaisieEtape maForm = new frmSaisieEtape();
+            maForm.MdiParent = this;
+            maForm.Show();
+        }
+
+        private void mise√ÄJour√âtapesNorm√©esToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            frmUpdateEtapeNormee maForm = new frmUpdateEtapeNormee();
+            maForm.MdiParent = this;
+            maForm.Show();
         }
     }
 }

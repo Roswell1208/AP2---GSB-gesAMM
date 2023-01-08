@@ -32,7 +32,7 @@ namespace GSB___gesAMM
             btnValider.Enabled = controlValidite();
 
             globale.cnx = new System.Data.SqlClient.SqlConnection();
-            globale.cnx.ConnectionString = "Data Source=BTS2021-25\\SQLEXPRESS01;Initial Catalog=GSB_gesAMM;Integrated Security=True;MultipleActiveResultSets=True";
+            globale.cnx.ConnectionString = globale.BddConnection;
             globale.cnx.Open();
         }
 
@@ -50,6 +50,7 @@ namespace GSB___gesAMM
         {
             if (bd.userListCheck(tbIdentifiant.Text, tbMotDePasse.Text) == true)
             {
+                globale.user = tbIdentifiant.Text;
                 frmAccueil maForm = new frmAccueil();
                 maForm.Show();
             }
