@@ -37,12 +37,13 @@
             this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cbListMed
             // 
             this.cbListMed.FormattingEnabled = true;
-            this.cbListMed.Location = new System.Drawing.Point(217, 45);
+            this.cbListMed.Location = new System.Drawing.Point(217, 107);
             this.cbListMed.Name = "cbListMed";
             this.cbListMed.Size = new System.Drawing.Size(242, 28);
             this.cbListMed.TabIndex = 0;
@@ -51,7 +52,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 48);
+            this.label1.Location = new System.Drawing.Point(21, 110);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(190, 20);
             this.label1.TabIndex = 1;
@@ -66,7 +67,7 @@
             this.columnHeader4,
             this.columnHeader5,
             this.columnHeader6});
-            this.lvWorkflowEtapes.Location = new System.Drawing.Point(21, 108);
+            this.lvWorkflowEtapes.Location = new System.Drawing.Point(21, 170);
             this.lvWorkflowEtapes.Name = "lvWorkflowEtapes";
             this.lvWorkflowEtapes.Size = new System.Drawing.Size(906, 358);
             this.lvWorkflowEtapes.TabIndex = 2;
@@ -103,11 +104,22 @@
             this.columnHeader6.Text = "Date de la norme";
             this.columnHeader6.Width = 150;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(179, 38);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(615, 32);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Consultation du workflow des étapes d\'un médicament :";
+            // 
             // frmEtapesMedicaments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(955, 500);
+            this.ClientSize = new System.Drawing.Size(955, 540);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lvWorkflowEtapes);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbListMed);
@@ -130,5 +142,6 @@
         private ColumnHeader columnHeader4;
         private ColumnHeader columnHeader5;
         private ColumnHeader columnHeader6;
+        private Label label2;
     }
 }

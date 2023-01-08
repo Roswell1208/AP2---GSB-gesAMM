@@ -19,8 +19,10 @@ namespace GSB___gesAMM
 
         // BDD Esteban
         // public static string BddConnection = "Data Source=BTS2021-29\\SQLEXPRESS;Initial Catalog=GSB_gesAMM;Integrated Security=True;MultipleActiveResultSets=True";
-        
-        
+
+        // BDD M. Gaulier
+        // public static string BddConnection = ...
+
         public static Dictionary<string, famille> lesFamilles = new Dictionary<string, famille>();
         public static Dictionary<string, medicaments> lesMedicaments = new Dictionary<string, medicaments>();
         public static Dictionary<string, etapeNormees> lesEtapesNormees = new Dictionary<string, etapeNormees>();

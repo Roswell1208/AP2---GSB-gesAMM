@@ -51,13 +51,14 @@
             this.tbNorme = new System.Windows.Forms.TextBox();
             this.tbLibelleEtape = new System.Windows.Forms.TextBox();
             this.tbNumEtape = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.gbSaisieEtape.SuspendLayout();
             this.SuspendLayout();
             // 
             // cbListMed
             // 
             this.cbListMed.FormattingEnabled = true;
-            this.cbListMed.Location = new System.Drawing.Point(233, 55);
+            this.cbListMed.Location = new System.Drawing.Point(233, 122);
             this.cbListMed.Name = "cbListMed";
             this.cbListMed.Size = new System.Drawing.Size(305, 28);
             this.cbListMed.TabIndex = 0;
@@ -71,7 +72,7 @@
             this.columnHeader3,
             this.columnHeader4,
             this.columnHeader5});
-            this.lvLastEtapeMed.Location = new System.Drawing.Point(33, 117);
+            this.lvLastEtapeMed.Location = new System.Drawing.Point(33, 184);
             this.lvLastEtapeMed.Name = "lvLastEtapeMed";
             this.lvLastEtapeMed.Size = new System.Drawing.Size(505, 261);
             this.lvLastEtapeMed.TabIndex = 1;
@@ -106,7 +107,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 58);
+            this.label1.Location = new System.Drawing.Point(33, 125);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(190, 20);
             this.label1.TabIndex = 2;
@@ -129,7 +130,7 @@
             this.gbSaisieEtape.Controls.Add(this.tbLibelleEtape);
             this.gbSaisieEtape.Controls.Add(this.tbNumEtape);
             this.gbSaisieEtape.Enabled = false;
-            this.gbSaisieEtape.Location = new System.Drawing.Point(591, 16);
+            this.gbSaisieEtape.Location = new System.Drawing.Point(591, 83);
             this.gbSaisieEtape.Name = "gbSaisieEtape";
             this.gbSaisieEtape.Size = new System.Drawing.Size(387, 427);
             this.gbSaisieEtape.TabIndex = 3;
@@ -264,11 +265,22 @@
             this.tbNumEtape.Size = new System.Drawing.Size(181, 27);
             this.tbNumEtape.TabIndex = 0;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(323, 25);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(375, 32);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Saisie de la décision d\'une étape :";
+            // 
             // frmSaisieEtape
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1011, 460);
+            this.ClientSize = new System.Drawing.Size(1011, 522);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.gbSaisieEtape);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lvLastEtapeMed);
@@ -308,5 +320,6 @@
         private Label label3;
         private Label label2;
         private DateTimePicker dtpDateDecision;
+        private Label label8;
     }
 }

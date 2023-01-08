@@ -23,6 +23,8 @@ namespace GSB___gesAMM
             globale.cnx.ConnectionString = globale.BddConnection;
             globale.cnx.Open();
 
+            globale.lesMedicaments.Clear();
+
             foreach (famille uneFam in bd.familleList())
             {
                 cbListFam.Items.Add(uneFam.getCode() + " - " + uneFam.getLibelle());
