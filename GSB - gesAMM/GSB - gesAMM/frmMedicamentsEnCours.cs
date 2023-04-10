@@ -31,7 +31,17 @@ namespace GSB___gesAMM
                     ListViewItem unMedicament = new ListViewItem();
                     unMedicament.Text = globale.lesMedicaments[leMedicament].getDepotLegal();
                     unMedicament.SubItems.Add(globale.lesMedicaments[leMedicament].getNomCommercial());
-                    //unMedicament.SubItems.Add(globale.lesFamilles[laFamille].getLibelle());
+               
+                    foreach(string laFamille in globale.lesFamilles.Keys)
+                    {
+                        if (globale.lesMedicaments[leMedicament].getFamCode() == laFamille)
+                        {
+                            unMedicament.SubItems.Add(globale.lesFamilles[laFamille].getLibelle());
+                        }
+                        
+                    }
+                
+                
                     lv_med.Items.Add(unMedicament);
 
                     //string depotLegal = globale.lesMedicaments[leMedicament].getDepotLegal();
@@ -55,11 +65,20 @@ namespace GSB___gesAMM
                     {
                         if (globale.lesMedicaments[leMedicament].getDepotLegal() == item.Text)
                         {
-                            ListViewItem lvi = new ListViewItem();
-                            //lvi.Text = (globale.lesEtapesNormees[laetapeNormee].getNumEtape());
-                            //lvi.SubItems.Add(globale.lesEtapesNormees[laetapeNormee].getDate());
-                            //lvi.SubItems.Add(globale.lesEtapesNormees[laetapeNormee].getNorme());
-                            lv_medwork.Items.Add(lvi);
+
+                            if (bd.medWrkEtapes(item.Text) != null)
+                            {
+                                foreach (Tuple<int, string, DateTime, string, string, DateTime> values in bd.medWrkEtapes(item.Text))
+                                {
+                                    ListViewItem lvi = new ListViewItem();
+
+                                    lvi.Text = values.Item1.ToString();
+                                    lvi.SubItems.Add(values.Item4.ToString());
+                                    lvi.SubItems.Add(values.Item3.ToString());
+
+                                    lv_medwork.Items.Add(lvi);
+                                }
+                            }
                         }
                     }
                 }

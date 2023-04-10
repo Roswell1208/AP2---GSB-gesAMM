@@ -409,10 +409,9 @@ namespace GSB___gesAMM
             //boucle de lecture des clients avec ajout dans la collection
             while (SqlExec.Read())
             {
-                //string FamCode = SqlExec["FAM_MED_CODE"].ToString();
                 string DepotLegal = SqlExec["MED_DEPOTLEGAL"].ToString();
                 string NomCommerc = SqlExec["MED_NOMCOMMERCIAL"].ToString();
-                //string FamLibelle = SqlExec["FAM_LIBELLE"].ToString();
+                string FamLibelle = SqlExec["FAM_LIBELLE"].ToString();
                 string CodeFamille = SqlExec["FAM_CODE"].ToString();
 
                 //if(globale.lesFamilles.ContainsKey(CodeFamille))
@@ -421,10 +420,14 @@ namespace GSB___gesAMM
 
                 //else
                 //{
-                    //famille unefamille = new famille(CodeFamille, FamLibelle, null, null);
-                    medicaments unMedicament = new medicaments(DepotLegal, NomCommerc, null, null, null, null, null);
+                    famille unefamille = new famille(CodeFamille, FamLibelle, null);
+                    medicaments unMedicament = new medicaments(DepotLegal, NomCommerc, CodeFamille, null, null, null, null);
 
-                    //globale.lesFamilles.Add(CodeFamille, unefamille);
+                    if (!globale.lesFamilles.Keys.Contains(CodeFamille))
+                    {
+                        globale.lesFamilles.Add(CodeFamille, unefamille);
+                    }
+                    
                     globale.lesMedicaments.Add(DepotLegal, unMedicament);
                 //}
             }
